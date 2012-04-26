@@ -1,0 +1,12 @@
+---
+name: "node06"
+runtimes:
+  - "<%= @node_runtime[:name] %>":
+      description: "Node <%= @node_runtime[:version] %>"
+      version: "<%= @node_runtime[:version] %>"
+      executable: "<%= @node_runtime[:executable] %>"
+      default: true
+app_servers:
+detection:
+  - "*.js": '.'
+staged_services:
